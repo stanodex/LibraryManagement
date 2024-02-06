@@ -11,8 +11,8 @@ public class Main {
             Scanner scan = new Scanner(System.in);
             while (true) {
                 System.out.println("""
-                        1)Reader Login
-                        2)Sign In
+                        1)Sign Up
+                        2)Reader Login
                         3)Librarian Login
                         4)Admin Login
                         5)Exit
@@ -20,8 +20,8 @@ public class Main {
                 System.out.print("Enter the number of action:");
                 int choice = scan.nextInt(6);
                 switch (choice) {
-                    case 1 -> Reader.readerLogin();
-                    case 2 ->Librarian.registerreader();
+                    case 1 -> Librarian.registerreader();
+                    case 2 -> Reader.readerLogin();
                     case 3 -> Librarian.login();
                     case 4 -> Admin.adminLogin();
                     case 5 -> {
